@@ -1,3 +1,70 @@
+body{
+	padding: 3em 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+	background-image: url("img/congruent_pentagon.png");
+}
+
+/* template */
+.container{
+	width: 850px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.header{
+	padding: 20px;
+	padding-bottom: 10px;
+	background-color: lightgreen;
+}
+
+.header h1{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.hero{
+	height: 140px;
+	background-size: cover;
+	background-position: 0 -640px;
+	border-bottom: 5px solid lightskyblue;
+	border-top: 5px solid salmon;
+}
+
+.content{
+	padding: 20px;
+}
+
+.content a{
+	text-decoration: none;
+	color: salmon;
+}
+
+.content h2{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.footer{
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer p{
+	color: #eaeaea;
+	text-align: center;
+	font-size: 13px;
+}
+
+/* Navigation */
 .navbar {
 	overflow: hidden;
 	background-color: #333;
