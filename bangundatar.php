@@ -1,13 +1,14 @@
 <?php
 include "header.php";
 ?>
-		<form method="post">
+<div class="hero">
+	<form method="post">
 		<p>Bangun datar</p>
 		<p>1. Persegi<br>2.Segitiga<br>3. Lingkaran</p>
 		<input type="number" name="bangun" 
 		<?php 
 		echo "value=";
-		if($_POST['bangun']=0){
+		if($_POST['bangun']!=0){
 			echo $_POST['bangun'];
 		}
 		else{
@@ -102,7 +103,8 @@ include "header.php";
 		}
 		?>
 	</form>
-	</div>
+</div>
+
 <?php
 include "footer.php";
 ?>

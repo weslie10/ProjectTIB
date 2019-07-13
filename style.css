@@ -31,7 +31,8 @@ body{
 }
 
 .hero{
-	height: 140px;
+	padding-left: 20px;
+	height: 100%;
 	background-size: cover;
 	background-position: 0 -640px;
 	border-bottom: 5px solid lightskyblue;

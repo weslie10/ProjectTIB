@@ -20,17 +20,4 @@
 			    <a href="looping.php">Shape Looping</a>
 			    <a href="physics.php">Physics Formula</a>
 		  	</div>
-		  	<?php
-	if(isset($_POST['submit'])){
-		$panjang = $_POST['panjang'];
-		$lebar = $_POST['lebar'];
-		
-		$keliling = ($panjang * 2) + ($lebar * 2);
-		$luas = $panjang * $lebar; 
-		
-		echo "Persegi panjang yang memiliki lebar: $lebar, dan panjang : $panjang, maka : <br>";
-		echo "Keliling: $keliling <br>";
-		echo "Luas: $luas <br>";
-	}
-	?>
 		</div>
