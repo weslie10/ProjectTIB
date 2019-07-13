@@ -9,7 +9,7 @@ panas dan dingin suatu benda.</p>
 <p>Alat untuk mengukur suhu adalah termometer.
 Ada 2 macam termometer, yaitu termo-meter
 berisi alkohol dan air raksa</p>
-<img src="suhu.png">
+<img src="img/suhu.png">
 </div>
 <?php
 include "footer.php";
