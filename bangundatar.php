@@ -4,18 +4,17 @@ include "header.php";
 <div class="hero">
 	<form method="post">
 		<p>Bangun datar</p>
-		<p>1. Persegi<br>2.Segitiga<br>3. Lingkaran</p>
-		<input type="number" name="bangun" 
+		<p>1. Persegi<br>2.Segitiga<br>3. Lingkaran<br>4.Belah Ketupat</p>
+		<input type="number" name="bangun" min="0" max="4" value=
 		<?php 
-		echo "value=";
-		if($_POST['bangun']!=0){
-			echo $_POST['bangun'];
-		}
-		else{
+		if($_POST['bangun']==0){
 			echo "0";
 		}
+		else if($_POST['bangun']!=0){
+			echo $_POST['bangun'];
+		}
 		?> 
-		min="0" max="3" >
+		>
 		<input type="submit" name="submit">
 		<br>
 		<?php
@@ -98,6 +97,38 @@ include "header.php";
 				echo "Keliling lingkaran ini adalah ".$pi*$r*2.;
 				echo "<br>";
 				echo "Luas lingkaran ini adalah ".$pi*$r*$r;
+			}
+		}
+
+		else if($bangun == 4) {
+			?>
+			<div>
+				<table>
+					<tr>
+						<td>Masukkan Diagonal 1</td>
+						<td>:</td>
+						<td><input type="text" name="diagonal1"></td>
+					</tr>
+					<tr>
+						<td>Masukkan Diagonal 2</td>
+						<td>:</td>
+						<td><input type="text" name="diagonal2"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="cek"></td>
+					</tr>
+				</table>
+			</div>
+			<?php
+			$d1 = $_POST['diagonal1'];
+			$d2 = $_POST['diagonal2'];
+			if($a!=null and $t!=null){
+				$a = $d1/2;
+				$b = $d2/2;
+				$s = sqrt(pow($a, 2) + pow($b, 2));
+				echo "Keliling segitiga ini adalah ";
+				echo $s*4;
+				echo "<br>Luas segitiga ini adalah ".$d1*$d2/2;
 			}
 		}
 		else{
