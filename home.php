@@ -6,21 +6,21 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
+  	<div class="container">
+    	<div class="header">
 			<center>
 				<h1>Web Everything</h1>
 			</center>
-      <div class="navbar">
-        <a href="home.html">Home</a>
-        <a href="bangundatar.php">Bangun Datar</a>
-        <a href="kalkulator.php">Calculator</a>
-        <a href="bangunruang.php">Geometry</a>
-        <a href="table.php">Operator Table</a>
-        <a href="looping.php">Shape Looping</a>
-        <a href="translater.php">Translater</a>
-      </div>
-    </div>
+		  	<div class="navbar">
+			    <a href="home.html">Home</a>
+			    <a href="bangundatar.php">Bangun Datar</a>
+			    <a href="kalkulator.php">Calculator</a>
+			    <a href="bangunruang.php">Geometry</a>
+			    <a href="table.php">Operator Table</a>
+			    <a href="looping.php">Shape Looping</a>
+			    <a href="translater.php">Translater</a>
+		  	</div>
+		</div>
 		<div class="hero">
 			<h3 style="padding-left: 20px">Web untuk yang kurang kerjaan atau yang lagi butuh hiburan semata wayang<br>
 				Silahkan tambah karangan indah kalian
@@ -29,6 +29,6 @@
 		<div class="footer">
 			<p>Copyright &copy; 2019. Designed by Success Team</p>
 		</div>
-  </div>
+  	</div>
 </body>
 </html>
