@@ -12,7 +12,7 @@
 				<h1>Web Everything</h1>
 			</center>
 		  	<div class="navbar">
-			    <a href="home.php">Home</a>
+			    <a href="beranda.php">Home</a>
 			    <a href="bangundatar.php">Bangun Datar</a>
 			    <a href="kalkulator.php">Calculator</a>
 			    <a href="bangunruang.php">Geometry</a>
