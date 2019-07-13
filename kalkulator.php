@@ -28,7 +28,7 @@ include "header.php";
 		<div class="kalkulator">
 			<h2 class="judul">KALKULATOR</h2>
 			<a class="brand">
-			<form method="$_POST" action="index.php">
+			<form method="$_POST" >
 				<input type="text" name="bil1" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Pertama">
 				<input type="text" name="bil2" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Kedua">
 				<select class="opt" name="operasi">
@@ -40,7 +40,7 @@ include "header.php";
 				<input type="submit" name="hitung" value="Hitug" class="tombol">
 			</form>
 			
-			<?php if(isset($_POST['hitung'])) ?>
+			<?php if(isset($_POST['hitung'])){ ?>
 				<input type="text" value="<?php echo $hasil;?>" class = "bil">
 			<?php }else{ ?>
 				<input type="text" value="0"  class = "bil">
