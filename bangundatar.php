@@ -1,28 +1,107 @@
 <?php
 include "header.php";
 ?>
-		<div class="hero">
-			<h3>Hitung Keliling Dan Luas Persegi Panjang</h3>
- 
-<form action="persegi-panjang.php" method="post">
-	Panjang : <input type="text" name="panjang"><br>
-	Lebar : <input type="text" name="lebar"><br>
-	<input type="submit" name="submit" value="Hitung">
-</form>
- 
-<?php
-	if(isset($_POST['submit'])){
-		$panjang = $_POST['panjang'];
-		$lebar = $_POST['lebar'];
-		
-		$keliling = ($panjang * 2) + ($lebar * 2); // Menghitung keliling
-		$luas = $panjang * $lebar; // Menghitung luas
-		
-		echo "Persegi panjang yang memiliki lebar: $lebar, dan panjang : $panjang, maka : <br>";
-		echo "Keliling: $keliling <br>";
-		echo "Luas: $luas <br>";
-	}
-	?>
+		<form method="post">
+		<p>Bangun datar</p>
+		<p>1. Persegi<br>2.Segitiga<br>3. Lingkaran</p>
+		<input type="number" name="bangun" 
+		<?php 
+		echo "value=";
+		if($_POST['bangun']=0){
+			echo $_POST['bangun'];
+		}
+		else{
+			echo "0";
+		}
+		?> 
+		min="0" max="3" >
+		<input type="submit" name="submit">
+		<br>
+		<?php
+		$bangun = $_POST['bangun'];
+		if($bangun == 1){
+			?>
+			<div>
+				<table>
+					<tr>
+						<td>Masukkan Sisi</td>
+						<td>:</td>
+						<td><input type="text" name="sisi"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="cek"></td>
+					</tr>
+				</table>
+			</div>
+			<?php
+			$sisi = $_POST['sisi'];
+			if($sisi!=null){
+				echo "Keliling persegi ini adalah ".$sisi*4;
+				echo "<br>";
+				echo "Luas persegi ini adalah ".$sisi*$sisi;
+			}
+		}
+
+		else if($bangun == 2) {
+			?>
+			<div>
+				<table>
+					<tr>
+						<td>Masukkan Alas segitiga</td>
+						<td>:</td>
+						<td><input type="text" name="alas"></td>
+					</tr>
+					<tr>
+						<td>Masukkan Tinggi segitiga</td>
+						<td>:</td>
+						<td><input type="text" name="tinggi"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="cek"></td>
+					</tr>
+				</table>
+			</div>
+			<?php
+			$a = $_POST['alas'];
+			$t = $_POST['tinggi'];
+			if($a!=null and $t!=null){
+				$ac = a/2;
+				echo "Keliling segitiga ini adalah ".$ac*2+$a."<br>";
+				echo "Luas segitiga ini adalah ".$a*$t;
+			}
+		}
+
+		else if($bangun == 3){
+			?>
+			<div>
+				<table>
+					<tr>
+						<td>Masukkan jari-jari</td>
+						<td>:</td>
+						<td><input type="text" name="r"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="cek"></td>
+					</tr>
+				</table>
+			</div>
+			<?php
+			$r = $_POST['r'];
+			$pi = 3.14;
+			if(pi%7==0){
+				$pi=22/7;
+			}
+			if($r!=null){
+				echo "Keliling lingkaran ini adalah ".$pi*$r*2.;
+				echo "<br>";
+				echo "Luas lingkaran ini adalah ".$pi*$r*$r;
+			}
+		}
+		else{
+			echo "<br>Input bangun datar terlebih dahulu";
+		}
+		?>
+	</form>
 	</div>
 <?php
 include "footer.php";
