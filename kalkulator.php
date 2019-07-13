@@ -4,27 +4,7 @@ include "header.php";
 
 <div class="hero">
 	<h3>
-	<?php
-	if (isset($_POST['hitung'])) {
-			$bil1 = $_POST['bil1'];
-			$bil2 = $_POST['bil2'];
-			$operasi = $_POST['operasi'];
-			switch ($operasi){
-				case 'tambah':
-					$hasil = $bil1+$bil2;
-					break;
-				case 'kurang':
-					$hasil = $bil1-$bil2;
-					break;
-				case 'kali':
-					$hasil = $bil1*$bil2;
-					break;
-				case 'bagi':
-					$hasil = $bil1/$bil2;
-					break;
-			}
-		}	
-		?>
+	
 		<div class="kalkulator">
 			<h2 class="judul">KALKULATOR</h2>
 			<a class="brand">
@@ -39,12 +19,35 @@ include "header.php";
 				</select>
 				<input type="submit" name="hitung" value="Hitug" class="tombol">
 			</form>
+			<?php
+	if (isset($_POST['hitung'])) {
+		$bil1 = $_POST['bil1'];
+		$bil2 = $_POST['bil2'];
+		$operasi = $_POST['operasi'];
+		switch ($operasi){
+			case 'tambah':
+				$hasil = $bil1+$bil2;
+				break;
+			case 'kurang':
+				$hasil = $bil1-$bil2;
+				break;
+			case 'kali':
+				$hasil = $bil1*$bil2;
+				break;
+			case 'bagi':
+				$hasil = $bil1/$bil2;
+				break;
+
+		}
+		?> <input type="text" value="<?php echo "$hasil"; ?>" class="bil">
+		<?php
+	}
+	else{ ?>
+		<input type="text" value="0"  class = "bil">
+		<?php
+	}	
+	?>
 			
-			<?php if(isset($_POST['hitung'])){ ?>
-				<input type="text" value="<?php echo $hasil;?>" class = "bil">
-			<?php }else{ ?>
-				<input type="text" value="0"  class = "bil">
-			<?php } ?>
 		</div>
 	</h3>
 </div>
