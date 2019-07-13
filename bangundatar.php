@@ -66,8 +66,9 @@ include "header.php";
 			$a = $_POST['alas'];
 			$t = $_POST['tinggi'];
 			if($a!=null and $t!=null){
-				$ac = a/2;
-				echo "Keliling segitiga ini adalah ".$ac*2+$a."<br>";
+				$ac = $a/2;
+				$s = sqrt(pow($ac, 2) + pow($t, 2));
+				echo "Keliling segitiga ini adalah ". $s * 2 + $a."<br>";
 				echo "Luas segitiga ini adalah ".$a*$t;
 			}
 		}
@@ -89,7 +90,7 @@ include "header.php";
 			<?php
 			$r = $_POST['r'];
 			$pi = 3.14;
-			if(pi%7==0){
+			if($pi%7==0){
 				$pi=22/7;
 			}
 			if($r!=null){
