@@ -18,6 +18,6 @@
 			    <a href="bangunruang.php">Geometry</a>
 			    <a href="table.php">Operator Table</a>
 			    <a href="looping.php">Shape Looping</a>
-			    <a href="translater.php">Translater</a>
+			    <a href="physics.php">Physics Formula</a>
 		  	</div>
 		</div>
