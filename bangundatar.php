@@ -68,8 +68,9 @@ include "header.php";
 			if($a!=null and $t!=null){
 				$ac = $a/2;
 				$s = sqrt(pow($ac, 2) + pow($t, 2));
-				echo "Keliling segitiga ini adalah ". $s * 2 + $a."<br>";
-				echo "Luas segitiga ini adalah ".$a*$t;
+				echo "Keliling segitiga ini adalah ";
+				echo $s+$s+$a;
+				echo "<br>Luas segitiga ini adalah ".$a*$t;
 			}
 		}
 
