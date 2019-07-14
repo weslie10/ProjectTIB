@@ -16,12 +16,21 @@ include "header.php";
 	<h3>Zat dan Wujudnya</h3>
 	<h4>A. Wujud Zat</h4>
 	<img src="img/zatwujud.PNG">
-	<h4>B. Perubahan Wjud Zat</h4>
+	<h4>B. Perubahan Wujud Zat</h4>
 	<h5>1. Perubahan Fisika</h5>
 	<p>Perubahan fisika adalah perubahan zat yang tidak menyebabkan terjadinya zat jenis baru. Contoh : es mencair, air menjadi uap.</p>
 	<img src="img/fisika.PNG">
 	<h5>2. Perubahan Kimia</h5>
 	<p>Perubahan kimia adalah perubahan zat yang menyebabkan terjadinya zat baru. Contoh : kayu terbakar menghasilkan api, arang, dan debu.</p>
+	<h4>Massa Jenis</h4>
+	<h5>1. Massa Jenis</h5>
+	<p>Massa jenis suatu zat adalah massa per satuan volume zat tersebut</p>
+	<img src="img/mj.PNG">
+	<h5>2. Massa Jenis Relatif</h5>
+	<p>Massa jenis relatif adlah prbandingan massa jenis suatu benda dengan massa jenis air</p>
+	<img src="img/mjr.PNG">
+	<h5>3. Massa Jenis Campuran</h5>
+	<img src="img/mjc.PNG">
 </div>
 <?php
 include "footer.php";
