@@ -66,33 +66,35 @@ include "header.php";
 	<h4>Gaya</h4>
 	<h5>A. Pengertian Gaya</h5>
 	<p>Gaya adalah sesuatu yang dapat menyebabkan
-terjadinya perubahan kecepatan dan perubahan
-bentuk suatu benda. Alat untuk mengukur gaya
-disebut neraca pegas atau dinamometer.</p>
-<img src="img/gaya.PNG" alt="gaya">
-<p>1. Gaya Sentuh</p>
-<p>Gaya sentuh: gaya yang mempengaruhi benda
-dengan cara bersentuhan langsung dengan
-benda tersebut. Contoh: gaya otot.</p>
-<p>2. Gaya Tak Sentuh</p>
-<p>Gaya tak sentuh: gaya yang mempengaruhi benda
-tanpa bersentuhan langsung dengan benda
-tersebut. Contoh: gaya magnet, gaya listrik.</p>
-<h5>B. Resultan Gaya</h5>
-<p>Gaya yang arahnya sama dapat diganti dengan
-sebuah gaya yang nilainya sama dengan jumlah
-kedua gaya. Gaya pengganti itu disebut resultan
-gaya yang dilambangkan dengan R.</p>
-<img src="resultangaya.PNG" alt="resultangaya">
-<h5>C. Gaya Berat dan Berat Jenis Benda</h5>
-<p>Gaya berat adalah besaran gaya gravitasi yang
-bekerja pada benda. Hubungan antara massa
-benda dan beratnya yaitu:
-1. semakin besar massa benda, semakin besar
-pula beratnya,
-2. perbandingan antara berat benda dan massa
-benda cenderung tetap.</p>
-<img src="img/gayaberat.PNG" alt="gayaberat">
+		terjadinya perubahan kecepatan dan perubahan
+		bentuk suatu benda. Alat untuk mengukur gaya
+	disebut neraca pegas atau dinamometer.</p>
+	<img src="img/gaya.PNG" alt="gaya">
+	<p>1. Gaya Sentuh</p>
+	<p>Gaya sentuh adalah gaya yang mempengaruhi benda
+		dengan cara bersentuhan langsung dengan
+	benda tersebut. </p>
+	<br>Contoh: gaya otot.
+	<p>2. Gaya Tak Sentuh</p>
+	<p>Gaya tak sentuh adalah gaya yang mempengaruhi benda
+		tanpa bersentuhan langsung dengan benda
+	tersebut. </p>
+	<br>Contoh: gaya magnet, gaya listrik.
+	<h5>B. Resultan Gaya</h5>
+	<p>Gaya yang arahnya sama dapat diganti dengan
+		sebuah gaya yang nilainya sama dengan jumlah
+		kedua gaya. Gaya pengganti itu disebut resultan
+	gaya yang dilambangkan dengan R.</p>
+	<img src="resultangaya.PNG" alt="resultangaya">
+	<h5>C. Gaya Berat dan Berat Jenis Benda</h5>
+	<p>Gaya berat adalah besaran gaya gravitasi yang
+		bekerja pada benda. Hubungan antara massa
+		benda dan beratnya yaitu: </p>
+		<br>1. semakin besar massa benda, semakin besar
+		pula beratnya,
+		<br>2. perbandingan antara berat benda dan massa
+	benda cenderung tetap.
+	<img src="img/gayaberat.PNG" alt="gayaberat">
 
 </div>
 <?php
