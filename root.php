@@ -43,7 +43,7 @@ include "header.php";
 
 		<h3 align="center">Menghitung Akar Suatu Bilangan</h3>
         <form method="POST">
-            <table>
+            <table align="center">
                 <tr>
                     <td>Input Bilangan</td>
                     <td>=</td>
