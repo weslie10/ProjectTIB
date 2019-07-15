@@ -15,13 +15,14 @@ if(isset($_POST['submit'])){
 ?>
 
 <div class="hero">
-    <div class="">
+    <center>
+    <div class="root">
         <form method="POST">
-            <table align="center" >
+            <table align="center">
                 <tr>
                     <td>Input Bilangan</td>
                     <td>:</td>
-                    <td><input name="bilangan" type="text" value="<?php echo $b; ?>"></td>
+                    <td><input name="bilangan" type="text" value="<?php echo $b; ?>" style="padding-left: 10px;"></td>
                 </tr>
                 <tr>
                     <td>Hitung</td>
@@ -32,20 +33,20 @@ if(isset($_POST['submit'])){
                 <tr>
                     <td>Pangkat/Akar</td>
                     <td>:</td>
-                    <td><input name="exp" type="text" value="<?php echo $exp; ?>"></td>
+                    <td><input name="exp" type="text" value="<?php echo $exp; ?>" style="padding-left: 10px;"></td>
                 </tr>
                 <tr>
                     <td><input name="submit" type="submit"></td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <input type="text" name="result" value="<?php echo $hasil; ?>" disabled>
+                        <input type="text" name="result" value="<?php echo $hasil; ?>" style="padding-left: 10px; width: 95%;" disabled>
                     </td>
                 </tr>
             </table>
         </form>
     </div>
-    
+    </center>
 </div>
 <?php
 include "footer.php";

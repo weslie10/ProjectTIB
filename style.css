@@ -140,3 +140,13 @@ body{
 	color: #eee;
 	font-weight: normal;
 }
+
+/*Root and Rank*/
+.root{
+	border-radius: 20px;
+	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+	background-color: #2F495A;
+	width: 40%;
+	color: white;
+}
