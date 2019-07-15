@@ -8,7 +8,7 @@ include "header.php";
 @$hasil = pow($bilangan, $pangkat);
 ?>
 
-
+		<h3 align="center">Menghitung Pangkat Suatu Bilangan</h3>
         <form method="POST">
             <table align="center" >
                 <tr>
@@ -41,9 +41,9 @@ include "header.php";
 @$hasil = sqrt($angka);
 ?>
 
-
+		<h3 align="center">Menghitung Akar Suatu Bilangan</h3>
         <form method="POST">
-            <table border="2" align="center" width="100">
+            <table>
                 <tr>
                     <td>Input Bilangan</td>
                     <td>=</td>
