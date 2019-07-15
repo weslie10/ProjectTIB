@@ -122,7 +122,7 @@ include "header.php";
 			<?php
 			$d1 = $_POST['diagonal1'];
 			$d2 = $_POST['diagonal2'];
-			if($a!=null and $t!=null){
+			if($d1!=null and $d2!=null){
 				$a = $d1/2;
 				$b = $d2/2;
 				$s = sqrt(pow($a, 2) + pow($b, 2));
