@@ -1,68 +1,51 @@
 <?php
 include "header.php";
-?>
-<div class="hero">
-<?php
-@$bilangan = $_POST['bilangan'];
-@$pangkat = $_POST['pangkat'];
-@$hasil = pow($bilangan, $pangkat);
+$b = $_POST['bilangan'];
+$h = $_POST['hitung'];
+$exp = $_POST['exp'];
+$hasil = "";
+if(isset($_POST['submit'])){
+    if($h=='1'){
+        $hasil = $b." ^ ".$exp." = ".pow($b,$exp);
+    }
+    else if($h=='2'){
+        $hasil = $exp." √ ".$b." = ".pow($b,1/$exp);
+    }
+}
 ?>
 
-		<h3 align="center">Menghitung Pangkat Suatu Bilangan</h3>
+<div class="hero">
+    <div class="">
         <form method="POST">
             <table align="center" >
                 <tr>
                     <td>Input Bilangan</td>
-                    <td>=</td>
-                    <td><input name="bilangan" type="text" value="<?php echo $bilangan; ?>"/></td>
+                    <td>:</td>
+                    <td><input name="bilangan" type="text" value="<?php echo $b; ?>"></td>
                 </tr>
                 <tr>
-                    <td>Pangkat</td>
-                    <td>=</td>
-                    <td><input name="pangkat" type="text" value="<?php echo $pangkat; ?>"/></td>
+                    <td>Hitung</td>
+                    <td>:</td>
+                    <td><input type="radio" name="hitung" value="1" checked>Pangkat<br>
+                        <input type="radio" name="hitung" value="2">Akar</td>
                 </tr>
                 <tr>
-                    <td><input name="submit" type="submit" value="SUBMIT"/></td>
+                    <td>Pangkat/Akar</td>
+                    <td>:</td>
+                    <td><input name="exp" type="text" value="<?php echo $exp; ?>"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <?php
-                        if(isset ($bilangan))
-                            echo $hasil;
-                        ?>
-                    </td>
-                </tr>
-            </table>
-        
-<hr>	
-
-<?php
-@$angka = $_POST['angka'];
-@$hasil = sqrt($angka);
-?>
-
-		<h3 align="center">Menghitung Akar Suatu Bilangan</h3>
-        <form method="POST">
-            <table align="center">
-                <tr>
-                    <td>Input Bilangan</td>
-                    <td>=</td>
-                    <td><input name="angka" type="text" value="<?php echo $angka; ?>"/></td>
-                </tr>
-               
-                <tr>
-                    <td><input name="submit" type="submit" value="SUBMIT"/></td>
+                    <td><input name="submit" type="submit"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <?php
-                        if(isset ($angka))
-                            echo $hasil;
-                        ?>
+                    <td colspan="3">
+                        <input type="text" name="result" value="<?php echo $hasil; ?>" disabled>
                     </td>
                 </tr>
             </table>
         </form>
+    </div>
+    
 </div>
 <?php
 include "footer.php";
