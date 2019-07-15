@@ -27,6 +27,9 @@ include "header.php";
 	</form>
 	
 	<?php
+	if (isset($_POST['bentuk'])) {
+		
+	
 		$b = $_POST['bentuk'];
 		$u = $_POST['ukuran'];
 		$line = '\n';
@@ -109,6 +112,7 @@ include "header.php";
 			</div>
 			<?php
 		}
+	}
 	?>
 </div>
 <?php
