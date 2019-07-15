@@ -10,7 +10,7 @@ include "header.php";
 
 
         <form method="POST">
-            <table border="1" align="center" >
+            <table align="center" >
                 <tr>
                     <td>Input Bilangan</td>
                     <td>=</td>
@@ -33,11 +33,36 @@ include "header.php";
                     </td>
                 </tr>
             </table>
-        </form>
-    </body>
-</html>
-
+        
 <hr>	
+
+<?php
+@$angka = $_POST['angka'];
+@$hasil = sqrt($angka);
+?>
+
+
+        <form method="POST">
+            <table border="2" align="center" width="100">
+                <tr>
+                    <td>Input Bilangan</td>
+                    <td>=</td>
+                    <td><input name="angka" type="text" value="<?php echo $angka; ?>"/></td>
+                </tr>
+               
+                <tr>
+                    <td><input name="submit" type="submit" value="SUBMIT"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <?php
+                        if(isset ($angka))
+                            echo $hasil;
+                        ?>
+                    </td>
+                </tr>
+            </table>
+        </form>
 </div>
 <?php
 include "footer.php";
