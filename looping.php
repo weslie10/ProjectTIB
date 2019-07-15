@@ -29,9 +29,10 @@ include "header.php";
 	<?php
 		$b = $_POST['bentuk'];
 		$u = $_POST['ukuran'];
+		$line = '\n';
 		if($b==1){
 			?>
-			<div style="border: 1px solid black; width: 30%;">
+			<div style="margin-top:10px;border: 1px solid black; width: 20%; padding-left: 10px;">
 				<?php
 				for ($i=0; $i < $u; $i++) { 
 					for ($j=0; $j < $u; $j++) { 
@@ -40,6 +41,71 @@ include "header.php";
 					echo "<br>";
 				}
 				?>
+			</div>
+			The Code in C++
+			<div style="border: 1px solid black; width: 30%; padding-left: 10px;">
+				for (i=0; i < <?php echo $u; ?>; i++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j < <?php echo $u; ?>; j++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" *");<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;printf("\n");<br>
+				}<br>
+			</div>
+			<?php
+		}
+		else if($b==2){
+			?>
+			<div style="margin-top:10px;border: 1px solid black; width: 20%; padding-left: 10px;">
+				<?php
+				for ($i=0; $i < $u; $i++) { 
+					for ($j=0; $j <= $i; $j++) { 
+						echo "* ";
+					}
+					echo "<br>";
+				}
+				?>
+			</div>
+			The Code in C++
+			<div style="border: 1px solid black; width: 30%; padding-left: 10px;">
+				for (i=0; i <= <?php echo $u; ?>; i++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j <= i; j++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" *");<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;printf("\n");<br>
+				}<br>
+			</div>
+			<?php
+		}
+		else if($b==3){
+			?>
+			<div style="margin-top:10px;border: 1px solid black; width: 20%; padding-left: 10px;">
+				<?php
+				$k = 2 * $u - 2;
+			    for ($i = 0; $i < $u; $i++){ 
+			        for ($j = 0; $j < $k; $j++){
+			            echo "&nbsp"; 
+			        }
+			        $k = $k - 1;
+			        for ($j = 0; $j <= $i; $j++){
+			            echo " *"; 
+			        }
+			        echo "<br>";
+			    } 
+				?>
+			</div>
+			The Code in C++
+			<div style="border: 1px solid black; width: 30%; padding-left: 10px;">
+				k = 2 * ukuran - 2 = <?php echo 2*$u-2; ?><br>
+				for (i=0; i <= <?php echo $u; ?>; i++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j <= k; j++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" ");<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;k-=1;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j <= i; j++) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" *");<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;printf("\n");<br>
+				}<br>
 			</div>
 			<?php
 		}
