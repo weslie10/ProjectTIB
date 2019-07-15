@@ -54,7 +54,7 @@ include "header.php";
 	<img src="img/ktetap.PNG" alt="ktetap">
 	<h5>2. Kecepatan Rata-rata</h5>
 	<img src="img/krata.PNG" alt="krata">
-	<h5>C. Gerak Lurus Berubah Beraturan (GLBB)</h5>
+	<h4>C. Gerak Lurus Berubah Beraturan (GLBB)</h4>
 	<p>Gerak lurus berubah beraturan: gerak lurus yang
 		memiliki perubahan kecepatan setiap sekon
 		(percepatan) yang selalu tetap.
