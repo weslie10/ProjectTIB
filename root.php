@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<div class="hero">
+<div class="hero" style="font-style: bold;">
     <center>
     <div class="root">
         <form method="POST">
