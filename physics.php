@@ -22,6 +22,7 @@ include "header.php";
 	<img src="img/fisika.PNG" alt="perubahanfisika" width="300px" height="150px">
 	<h5>2. Perubahan Kimia</h5>
 	<p>Perubahan kimia adalah perubahan zat yang menyebabkan terjadinya zat baru. Contoh : kayu terbakar menghasilkan api, arang, dan debu.</p>
+
 	<h4>Massa Jenis</h4>
 	<h5>1. Massa Jenis</h5>
 	<p>Massa jenis suatu zat adalah massa per satuan volume zat tersebut</p>
@@ -31,6 +32,68 @@ include "header.php";
 	<img src="img/mjr.PNG" alt="mjr">
 	<h5>3. Massa Jenis Campuran</h5>
 	<img src="img/mjc.PNG" alt="mjc">
+	<img src="img/keterangan.PNG" alt="keterangan">
+
+	<h4>Gerak</h4>
+	<h5>A. Pengertian Gerak</h5>
+	<p>Gerak adalah perubahan kedudukan suatu benda
+	terhadap titik acuannya.</p>
+	<p>Gerak menurut keadaan benda:
+		- gerak yang sebenarnya,
+		- gerak semu.
+		Gerak menurut bentuk lintasan:
+		- gerak lurus,
+		- gerak melingkar,
+		- gerak parabola,
+	- gerak tidak beraturan.</p>
+	<h5>B. Gerak Lurus Beraturan</h5>
+	<p>Gerak lurus beraturan: gerak suatu benda yang
+		lintasannya berupa garis lurus dan besar kecepatannya
+	setiap saat selalu sama atau tetap.</p>
+	<p>1. Kecepatan Tetap</p>
+	<img src="img/ktetap.PNG" alt="ktetap">
+	<p>2. Kecepatan Rata-rata</p>
+	<img src="img/krata.PNG" alt="krata">
+	<h5>C. Gerak Lurus Berubah Beraturan (GLBB)</h5>
+	<p>Gerak lurus berubah beraturan: gerak lurus yang
+		memiliki perubahan kecepatan setiap sekon
+		(percepatan) yang selalu tetap.
+		Percepatan: pertambahan kecepatan setiap
+		waktu pada benda yang bergerak. Perlambatan
+	adalah percepatan yang bernilai negatif.</p>
+	<img src="img/glbb.PNG" alt="glbb">
+
+	<h4>Gaya</h4>
+	<h5>A. Pengertian Gaya</h5>
+	<p>Gaya adalah sesuatu yang dapat menyebabkan
+terjadinya perubahan kecepatan dan perubahan
+bentuk suatu benda. Alat untuk mengukur gaya
+disebut neraca pegas atau dinamometer.</p>
+<img src="img/gaya.PNG" alt="gaya">
+<p>1. Gaya Sentuh</p>
+<p>Gaya sentuh: gaya yang mempengaruhi benda
+dengan cara bersentuhan langsung dengan
+benda tersebut. Contoh: gaya otot.</p>
+<p>2. Gaya Tak Sentuh</p>
+<p>Gaya tak sentuh: gaya yang mempengaruhi benda
+tanpa bersentuhan langsung dengan benda
+tersebut. Contoh: gaya magnet, gaya listrik.</p>
+<h5>B. Resultan Gaya</h5>
+<p>Gaya yang arahnya sama dapat diganti dengan
+sebuah gaya yang nilainya sama dengan jumlah
+kedua gaya. Gaya pengganti itu disebut resultan
+gaya yang dilambangkan dengan R.</p>
+<img src="resultangaya.PNG" alt="resultangaya">
+<h5>C. Gaya Berat dan Berat Jenis Benda</h5>
+<p>Gaya berat adalah besaran gaya gravitasi yang
+bekerja pada benda. Hubungan antara massa
+benda dan beratnya yaitu:
+1. semakin besar massa benda, semakin besar
+pula beratnya,
+2. perbandingan antara berat benda dan massa
+benda cenderung tetap.</p>
+<img src="img/gayaberat.PNG" alt="gayaberat">
+
 </div>
 <?php
 include "footer.php";
