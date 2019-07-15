@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Warung Serbaguna</title>
-	<!-- <link rel="icon" type="image/png" href="background/favicon.ico"> -->
+	<title>Learning Web</title>
+	<link rel="icon" type="image/png" href="img/favicon.ico">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
   	<div class="container">
     	<div class="header">
 			<center>
-				<h1>Web Everything</h1>
+				<h1>This is Everything</h1>
 			</center>
 		  	<div class="navbar">
 			    <a href="beranda.php">Home</a>
