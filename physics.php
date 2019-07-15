@@ -85,7 +85,7 @@ include "header.php";
 		sebuah gaya yang nilainya sama dengan jumlah
 		kedua gaya. Gaya pengganti itu disebut resultan
 	gaya yang dilambangkan dengan R.</p>
-	<img src="resultangaya.PNG" alt="resultangaya">
+	<img src="img/resultangaya.PNG" alt="resultangaya">
 	<h4>C. Gaya Berat dan Berat Jenis Benda</h4>
 	<p>Gaya berat adalah besaran gaya gravitasi yang
 		bekerja pada benda. Hubungan antara massa
