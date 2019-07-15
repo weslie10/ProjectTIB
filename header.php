@@ -16,7 +16,7 @@
 			    <a href="bangundatar.php">Bangun Datar</a>
 			    <a href="kalkulator.php">Calculator</a>
 			    <a href="bangunruang.php">Geometry</a>
-			    <a href="table.php">Operator Table</a>
+			    <a href="root.php">Root and Rank</a>
 			    <a href="looping.php">Shape Looping</a>
 			    <a href="physics.php">Physics Formula</a>
 		  	</div>
