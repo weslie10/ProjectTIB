@@ -4,7 +4,7 @@ include "header.php";
 <div class="hero">
 <form method="post">
 		<p>Bangun Ruang</p>
-		<p>1. Kubus<br>2.Balok<br>3. Bola</p>
+		<p>1. Kubus<br>2. Balok<br>3. Bola</p>
 		<input type="number" name="ruang" 
 		<?php 
 		echo "value=";
